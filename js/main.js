@@ -11,6 +11,8 @@
 	 * We'll start by trying out OMDBI, 
 	 * an api with information about different movies.
 	 */
+
+	// PART 1: MOVIES
 	// ------------------------------------------------------------ 
 	// PROBLEM 1:
 	// ------------------------------------------------------------ 
@@ -82,5 +84,50 @@
 	 let theBirdsRating
 	 let ratatouilleRating 
 
+	// ------------------------------------------------------------ 
+	// PROBLEM 7:
+	// ------------------------------------------------------------ 
+	/* Let's wrap things up by combining our new api skills with our prior knowledge
+	 * Make a request to the movie of your choice. 
+	 * Get the poster from the response. Then use jquery to create an image element with the movie poster.
+	 * and append that image element to the div with the movie id. 
+	 *
+	 * Key Tools: 
+	 * - append or appendChild
+	 * - css and background image
+	 */
 
+	// PART 2: GIFFY
+	/* Let try another api. The giffy api gives you urls to a bunch of cool gifs.
+	 */
+	// ------------------------------------------------------------ 
+	// PROBLEM 8:
+	// ------------------------------------------------------------ 
+	/* Make a get request to the below url. Get a url link from the response
+	 * and add it to the div with the id of 'puppy', the same way we did with our movie poster.
+	 * I reccomend printing the response object as a first step.
+	 */
+	 const puppy = 'http://api.giphy.com/v1/gifs/search?q=funny-dog&api_key=dc6zaTOxFJmzC'
+	// ------------------------------------------------------------ 
+	// PROBLEM 9:
+	// ------------------------------------------------------------ 
+	/* Sweet, now let's combine everything. 
+	 * Make requests to get gifs for the terms ardvark, batman and cat. 
+	 * Make sure they load in alphabetical order.
+	 * Get the gifs from the response object and append each to 
+	 * the div with the matching id.
+	 * 
+	 * So, we should see an ardvark gif load on our page, then a batman one,
+	 * then a cat git.
+	 */
+	// ------------------------------------------------------------ 
+	// PROBLEM 10: BONUS
+	// ------------------------------------------------------------ 
+	/* These apis were good for practice because they don't require an api key.
+	 * However most do. One of the keys to getting comfortable with apis is learing
+	 * how to read the documentation. 
+	 * 
+	 * If you want more practice, take a look at the openweathermap api.
+	 * https://openweathermap.org/api
+	*/
 })();
